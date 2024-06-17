@@ -1,13 +1,17 @@
 #!/bin/bash
-dir=$PWD
 
-cd $HOME
-cp -r $dir/.antigen/antigen.zsh .
-cp $dir/.p10k.zsh .
-cp $dir/.zshrc .
-cp $dir/.proxy.sh .
+if command -v git >/dev/null 2>&1; then
+    echo "🥵"
+else
+    echo "please install git first"
+    exit 1
+fi
+
+cp -r .antigen ~
+cp .p10k.zsh ~
+cp .zshrc ~
+cp .proxy.sh ~
 
 sudo chsh -s $(which zsh)
-
+cd ~
 zsh
-
