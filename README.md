@@ -1,2 +1,2 @@
 ### install zsh with package manager apt/dnf/pacman....
-### git clone this repo & cd sh-config & ./install.sh
+### git clone https://github.com/FlanerQ/sh-config.git && cd sh-config && chmod +x install.sh && ./install.sh
