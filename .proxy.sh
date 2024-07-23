@@ -11,6 +11,7 @@ on_proxy() {
   export HTTPS_PROXY=$proxy_
   export all_proxy=$proxy_
   export ALL_PROXY=$proxy_
+  export NO_PROXY="localhost,127.0.0.1"
   export no_proxy="localhost,127.0.0.1"
 }
 
@@ -21,6 +22,7 @@ off_proxy() {
   unset HTTPS_PROXY
   unset all_proxy
   unset ALL_PROXY
+  unset NO_PROXY
   unset no_proxy
 }
 
