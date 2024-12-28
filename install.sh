@@ -12,6 +12,6 @@ cp .p10k.zsh ~
 cp .zshrc ~
 cp .proxy.sh ~
 
-sudo chsh -s $(which zsh)
+chsh -s $(which zsh)
 cd ~
 zsh
